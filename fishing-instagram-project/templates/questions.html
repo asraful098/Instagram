@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarong Bangladesh Questions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Aarong Bangladesh Quiz</h2>
+            <p>Answer these questions to complete your giveaway entry!</p>
+            <form method="POST" action="/questions">
+                <p>1. In which year was Aarong founded?</p>
+                <input type="text" name="q1" placeholder="Enter year (e.g., 19..)" required>
+                
+                <p>2. What does Aarong primarily sell?</p>
+                <input type="text" name="q2" placeholder="e.g., Handi...." required>
+                
+                <p>3. Where is Aarong’s headquarters located?</p>
+                <input type="text" name="q3" placeholder="e.g., Dha.." required>
+                
+                <button type="submit">Submit Answers</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
